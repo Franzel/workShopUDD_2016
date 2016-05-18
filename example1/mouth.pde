@@ -11,7 +11,8 @@ class Mouth {
 
   public void display() {
     fill(mouthColor);
-  stroke(mouthColor * color(30,0,0));
-    ellipse(pos.x, pos.y, size.x, size.y);
+    stroke(mouthColor * color(30, 0, 0));
+    rectMode(CENTER);
+    rect(pos.x, pos.y, size.x, size.y);
   }
 }

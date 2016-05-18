@@ -12,7 +12,7 @@ class Face {
     this.pos = pos;
     this.size = size;
     this.faceColor = faceColor;
-    this.m = new Mouth(new PVector(pos.x, pos.y), mouthSize, faceColor*color(5,10,10));
+    this.m = new Mouth(new PVector(pos.x, pos.y + 10), mouthSize, faceColor*color(5,10,10));
   }
 
   //draw
