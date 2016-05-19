@@ -19,7 +19,7 @@ class Face {
   public void display() {
     fill(faceColor );
     stroke(faceColor * color(50,90,10));
-    ellipse(pos.x, pos.y, size.x, size.y);
+    ellipse(pos.x, pos.y, size.x + sin(frameCount/6)*10, size.y);
     m.display();
   }
 }
