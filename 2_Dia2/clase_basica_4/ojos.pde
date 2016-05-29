@@ -14,7 +14,7 @@ class Ojos {
   void display() {
     //ojos
     fill(0);
-    ellipse(posX +20, posY, sizeX, sizeY);
-    ellipse(posX -20, posY, sizeX, sizeY);
+    ellipse(posX + sizeX*2, posY, sizeX, sizeY);
+    ellipse(posX - sizeX*2, posY, sizeX, sizeY);
   }
 }

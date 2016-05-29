@@ -14,6 +14,6 @@ class Cara {
   public void display() {
     //rostro
     fill(255);
-    ellipse(this.posX, this.posY, sizeX, sizeY);
+    ellipse(posX, posY, sizeX, sizeY);
   }
 }

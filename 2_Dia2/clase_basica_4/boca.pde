@@ -12,8 +12,8 @@ class Boca {
   }
 
   void display() {
-    //rostro
+    //boca
     fill(0);
-    ellipse(posX, posY, sizeX, sizeY);
+    ellipse(posX, posY+sizeY, sizeX, sizeY);
   }
 }

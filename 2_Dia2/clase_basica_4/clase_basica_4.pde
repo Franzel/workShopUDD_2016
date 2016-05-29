@@ -21,7 +21,7 @@ void setup () {
       float sizeY = random(30,90);
 
       miCara.add(new Cara(posX, posY, sizeX, sizeY));
-      misOjos.add(new Ojos(posX, posY, sizeX/6, sizeY/6));
+      misOjos.add(new Ojos(posX, posY, sizeX/random(5,9), sizeY/random(5,9)));
       miBoca.add(new Boca(posX, posY+sizeX/4, sizeX/10, sizeY/10));
     }
   }
