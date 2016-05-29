@@ -1,0 +1,27 @@
+class Circular_1 {
+  float posX; 
+  float posY;
+  float sizeX;  
+  float sizeY;
+  int nElementos;
+  float radius;
+
+  Circular_1(float posX, float posY, float sizeX, float sizeY, int nElementos, float radius) {
+
+    this.posX = posX;
+    this.posY = posY;
+    this.sizeX = sizeX;
+    this.sizeY = sizeY;
+    this.nElementos = nElementos;
+    this.radius = radius;
+  }
+
+  void display() {
+    for (int i=0; i<nElementos; i++) {
+      float x = posX + sin(TWO_PI/nElementos*i)*radius;
+      float y = posY + cos(TWO_PI/nElementos*i)*radius;
+      fill(255,255,0);
+      ellipse(x, y, sizeX, sizeY);
+    }
+  }
+}
