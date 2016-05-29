@@ -1,8 +1,8 @@
 import processing.pdf.*;
 
 ArrayList<Face> face;  //creamos un array de Faces
-final int NUM_X = 25;  // numero de columnas
-final int NUM_Y = 20 ;  // numero de filas
+int NUM_X = 25;  // numero de columnas
+int NUM_Y = 20 ;  // numero de filas
 
 void setup () {
   size(800, 800);
