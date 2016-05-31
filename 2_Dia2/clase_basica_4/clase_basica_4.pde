@@ -12,7 +12,6 @@ void setup () {
   misOjos = new ArrayList();
   miBoca = new ArrayList();
 
-
   for (int i=0; i<NUM_X; i++) {
     for (int j=0; j<NUM_Y; j++) {
       float posX = (width/float(NUM_X-1)) * i;

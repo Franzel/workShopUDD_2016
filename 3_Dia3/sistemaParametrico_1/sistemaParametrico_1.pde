@@ -44,7 +44,7 @@ void draw() {
     miCara.get(i).display();
     misOjos.get(i).display();
     miCircular_2.get(i).display();
-    //miCircular_1.get(i).display();
+    miCircular_1.get(i).display();
     miBoca.get(i).display();
 
   }
