@@ -1,6 +1,7 @@
 PImage imagen1, imagen2;
 int nCols = 20;
 int nFilas = 20;
+float imageScale = 30;
 
 void setup() {
   size(500, 500);
@@ -13,9 +14,8 @@ void draw() {
 
   for (int i=0; i<nCols; i++) {
     for (int j=0; j<nFilas; j++) { 
-      image(imagen1, 30*i, 30*j, 30, 30);
-      image(imagen2, 30*i, 30*j, 30, 30);
+      image(imagen1, 30*i, 40*j, imageScale, imageScale);
+      image(imagen2, 30*i, 40*j, imageScale, imageScale);
     }
   }
 }
-

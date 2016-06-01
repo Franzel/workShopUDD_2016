@@ -6,6 +6,7 @@ float mover = 0.1;
 void setup() {
   background(0);
   size(500, 500);
+  //colorMode(HSB,360,100,100);
 }
 
 
@@ -17,9 +18,10 @@ void draw() {
     //rect(30*i, 30, 30, 30);
 
     for (int j=0; j<nFilas; j++) {
-      fill(random(255), random(255), random(255));
-      ellipse(30*i, 30*j, random(10, 30), random(10, 30));
+      //fill(random(255), random(255), random(255));
+      fill(20*i, 5*j, 100);
+      ellipse(30*i, 30*j, 30, 30);
+      //ellipse(30*i, 30*j, random(10, 30), random(10, 30));
     }
   }
 }
-
