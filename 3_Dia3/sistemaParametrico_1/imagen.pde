@@ -12,16 +12,15 @@ class Imagen {
     this.sizeX = sizeX;
     this.sizeY = sizeY;
     this.rot = radians(rotacion);
-    imagenSvg = loadShape("svgExample2.svg");
+    imagenSvg = loadShape("svgExample3.svg");
   }
 
   void display() {
     pushMatrix();
     translate(posX, posY);
     rotate(rot);
-    rectMode(CENTER);
+    shapeMode(CENTER);
     shape(imagenSvg, 0, 0, sizeX, sizeY);
-    rectMode(CORNER);
     popMatrix();
   }
 }

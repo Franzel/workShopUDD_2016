@@ -8,11 +8,11 @@ ArrayList<Circular_2> miCircular_2;
 ArrayList<Imagen> miImagen_1;
 
 
-int NUM_X = 10;  // numero de columnas
-int NUM_Y = 10 ;  // numero de filas
+int NUM_X = 15;  // numero de columnas
+int NUM_Y = 15 ;  // numero de filas
 
 void setup () {
-  size(800, 800, PDF, "poster.pdf");
+  //size(800, 800, PDF, "poster.pdf");
   size(800, 800);
 
   miCara = new ArrayList();
@@ -46,16 +46,16 @@ void setup () {
 }
 
 void draw() {
-  noLoop();
+  
   background (240);
   for (int i=0; i<miCara.size(); i++) {
     miCara.get(i).display();
     //misOjos.get(i).display();
     //miCircular_2.get(i).display();
+    miImagen_1.get(i).display();
     miCircular_1.get(i).display();
     //miBoca.get(i).display();
-    miImagen_1.get(i).display();
 
-    exit();  // Quit
+    //exit();  // Quit
   }
 }
