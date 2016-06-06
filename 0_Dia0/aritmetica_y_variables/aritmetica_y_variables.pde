@@ -1,14 +1,14 @@
 // aritmetica basica
 // este sketch demustra que se pueden hacer operaciones matematicas
 
-float nOne;
-float nTwo;
-float result;
+float varUno;
+float varDos;
+float varResultado;
 
-nOne = 10;
-nTwo = 2;
+varUno = 10;
+varDos = 2;
+varResultado = varUno * varDos;
 
-println("nOne/3 = " + nOne/3);
-println("nOne/4 = " + nOne/4);
-
-
+println("varUno/3 = " + varUno/3);
+println("varDos/4 = " + varDos/4);
+println("varResultado = " + varResultado);
