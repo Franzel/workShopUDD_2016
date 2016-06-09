@@ -1,6 +1,5 @@
 ArrayList<Cara> miCara;  //declaramos un array de Caras
 ArrayList<Ojos> misOjos; //declaramos un array de Ojos
-ArrayList<Boca> miBoca;  //declaramos un array de Bocas
 
 int NUM_X = 7;  // numero de columnas
 int NUM_Y = 7 ;  // numero de filas
@@ -10,7 +9,6 @@ void setup () {
 
   miCara = new ArrayList();
   misOjos = new ArrayList();
-  miBoca = new ArrayList();
 
   for (int i=0; i<NUM_X; i++) {
     for (int j=0; j<NUM_Y; j++) {
@@ -21,7 +19,6 @@ void setup () {
 
       miCara.add(new Cara(posX, posY, sizeX, sizeY));
       misOjos.add(new Ojos(posX, posY, sizeX/random(5,9), sizeY/random(5,9)));
-      miBoca.add(new Boca(posX, posY+sizeX/4, sizeX/10, sizeY/10));
     }
   }
 }
@@ -32,6 +29,5 @@ void draw() {
   for (int i=0; i<miCara.size(); i++) {
     miCara.get(i).display();
     misOjos.get(i).display();
-    miBoca.get(i).display();
   }
 }

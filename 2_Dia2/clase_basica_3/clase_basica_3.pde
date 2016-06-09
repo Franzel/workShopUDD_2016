@@ -9,8 +9,6 @@ Boca miBoca_2;
 
 void setup() {
   size(700, 200);
-  PVector mainPos = new PVector(100, 100); // usaremos esto para la posicion del elemento
-  PVector mainScale = new PVector(100, 100); //y esto para el tamaño
 
   //creamos el objeto: la primera cara
   miCara_1 = new Cara(100, 100, 100, 100); 
