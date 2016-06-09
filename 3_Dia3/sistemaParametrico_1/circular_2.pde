@@ -26,7 +26,7 @@ class Circular_2 {
       rotate(TWO_PI/nElementos*i);
       rectMode(CENTER);
       fill(0);
-      rect(radius,0,20,3);
+      rect(radius,0,sizeX,sizeY);
       rectMode(CORNER);
       popMatrix();
     }

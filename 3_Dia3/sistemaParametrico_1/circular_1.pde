@@ -24,7 +24,7 @@ class Circular_1 {
       
       float x = posX + sin(TWO_PI/nElementos*i)*radius;
       float y = posY + cos(TWO_PI/nElementos*i)*radius;
-      fill(255,255,0);
+      fill(250,50,100);
       ellipse(x, y, sizeX, sizeY);
       //rect(x, y, sizeX, sizeY);   //de-comentar para ver resultado  
     }
